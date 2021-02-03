@@ -1,4 +1,5 @@
 <template>
+  <div class="wrapper">
   <div class="card" 
   :class="newCard.vendorName">
     <img class="chip" src="../assets/chip-light.svg">
@@ -12,8 +13,9 @@
     <p class="cardnumber"> {{newCard.cardNumber}}</p>
     <p class="label-cardholder"> Cardholder Name</p>
     <p class="input-cardholder"> {{newCard.name}}</p>
-    <p class="label-year-month"> YY/MM</p>
+    <p class="label-year-month"> Valid Thru</p>
     <p class="input-year-month"> {{newCard.month}}/{{newCard.year}} <p/>
+  </div>
   </div>
 </template>
 
@@ -37,7 +39,8 @@ export default {
 
 <style scoped>
 
-
-
-
+.wrapper{
+display:flex;
+justify-content: center;
+}
 </style>

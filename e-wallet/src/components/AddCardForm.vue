@@ -1,7 +1,7 @@
 <template>
     <div>
       <MyCard :newCard="newCard"/>
-    
+    <div class="form-wrapper">
     <form 
     class ="add-card-form" 
     @submit.prevent="saveCard">
@@ -16,6 +16,7 @@
     <input 
     class="number" 
     type="text" 
+    v-mask="'#### #### #### ####'"
     placeholder="XXXX XXXX XXXX XXXX"
     maxlength="16"
     v-model="newCard.cardNumber"> 
@@ -63,6 +64,7 @@
       <input type="submit" value="ADD CARD" class="save-card">
     
     </form>
+    </div>
   </div>
 </template>
 
@@ -112,8 +114,9 @@ export default {
 
 <style scoped>
 
-template{
-  align-content: center;
+ .form-wrapper{
+  display:flex;
+  justify-content: center;
 }
 
 .add-card-form{
@@ -124,6 +127,7 @@ template{
   grid-gap:10px;
   background-color: lightgrey;
   padding:25px;
+  border-radius: 10px;
 
 }
 

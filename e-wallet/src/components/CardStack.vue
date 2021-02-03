@@ -18,7 +18,7 @@
     <p class="cardnumber"> {{cards.cardNumber}}</p>
     <p class="label-cardholder"> Cardholder Name</p>
     <p class="input-cardholder"> {{cards.name}}</p>
-    <p class="label-year-month"> YY/MM</p>
+    <p class="label-year-month"> Valid Thru</p>
     <p class="input-year-month"> {{cards.month}}/{{cards.year}} <p/>
     
 
@@ -62,16 +62,20 @@ export default {
 
 <style scoped>
 
+
 .cardstack{
+display: flex;
+width: 100%;
+justify-content: center;
     position: sticky;
     display: grid;
     grid-auto-rows: 100px;
 }
 
 .add-new{
-    position:relative;
+
+  
     margin-top:250px;
-    width:300px;
     height:150px;
     border-radius: 5px;
     height:50px;
