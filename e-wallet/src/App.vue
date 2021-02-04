@@ -36,6 +36,27 @@
   }
 }
 
+.btn-remove{
+  margin:10px;
+  height:150px;
+  border-radius: 5px;
+  height:40px;
+  background-color:rgb(194, 192, 192);
+  
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+.btn-add{
+  margin:10px;
+  height:150px;
+  border-radius: 5px;
+  height:40px;
+  background-color:white;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
 .card {
   display:grid;
   grid-template-rows: 40px  40px  40px  40px  40px  40px  40px  40px;

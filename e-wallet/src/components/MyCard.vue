@@ -1,6 +1,6 @@
 <template>
   <div class="wrapper">
-  <div class="card" 
+  <div class="card"
   :class="newCard.vendorName">
     <img class="chip" src="../assets/chip-light.svg">
     <section class="vendor-img">
@@ -27,12 +27,7 @@ export default {
   name: 'MyCard',
   props: ['newCard'],
 
-    
 }
-
-
-
-
 
 </script>
 
